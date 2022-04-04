@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Frogger</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 735px; height: 840px; background: #231F20"></canvas>
+    <script src="Build/Frogger.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Frogger.data",
+        frameworkUrl: "Build/Frogger.framework.js",
+        codeUrl: "Build/Frogger.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Frogger",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>

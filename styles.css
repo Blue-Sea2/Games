@@ -11,7 +11,11 @@ a{
 	color: black;
 	background-color: rgb(230, 230, 255);
 	padding: 5px 5px;
+	float: left;
 }
 a:hover{
 	background-color: rgb(200, 200, 255);
+}
+hr{
+	border: none;
 }

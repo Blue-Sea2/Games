@@ -2,3 +2,13 @@ img{
 	height: 20px;
 	width: 20px;
 }
+a{
+	border: 1px;
+	border-radius: 3px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	background-color: rgb(0,200,255);
+}

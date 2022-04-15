@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Frogger</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Unity WebGL Player | Frogger</title>
 		<link rel="stylesheet" href="../styles.css">
-  </head>
-  <body style="text-align: center">
-    <a href="../">Back</a><br>
-    <canvas id="unity-canvas" style="width: 735px; height: 840px; background: #231F20"></canvas>
-    <script src="Build/Frogger.loader.js"></script>
-    <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Frogger.data",
-        frameworkUrl: "Build/Frogger.framework.js",
-        codeUrl: "Build/Frogger.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Frogger",
-        productVersion: "1.0",
-      });
-    </script>
-  </body>
+	</head>
+	<body style="text-align: center">
+		<a href="../">Back</a><br>
+		<h1>Frogger</h1>
+		<canvas id="unity-canvas" style="width: 735px; height: 840px; background: #231F20"></canvas>
+		<p>
+			<h3>Instructions</h3>
+			Use the arrow keys to move Frogger to the other side of the screen.
+			Frogger dies if he gets run over by a car or falls into the water.
+		</p>
+		
+		<script src="Build/Frogger.loader.js"></script>
+		<script>
+			createUnityInstance(document.querySelector("#unity-canvas"), {
+				dataUrl: "Build/Frogger.data",
+				frameworkUrl: "Build/Frogger.framework.js",
+				codeUrl: "Build/Frogger.wasm",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "DefaultCompany",
+				productName: "Frogger",
+				productVersion: "1.0",
+			});
+		</script>
+	</body>
 </html>
